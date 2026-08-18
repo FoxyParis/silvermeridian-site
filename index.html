@@ -1,100 +1,263 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Silver Meridian — Digital Experience Architects</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Silver Meridian — independent app development, product design and digital experiences.">
+  <meta name="theme-color" content="#0f172a">
+  <title>Silver Meridian — App Development & Digital Products</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        background: #020716;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-        color: rgba(255,255,255,0.9);
-        text-align: center;
-      }
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-      img {
-        width: 100%;
-        height: auto;
-        display: block;
-      }
+  <header class="site-header" id="top">
+    <div class="shell nav-wrap">
+      <a class="brand" href="#top" aria-label="Silver Meridian home">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span>Silver Meridian</span>
+      </a>
 
-      /* Legal buttons under banner */
-      .legal-links {
-        margin: 24px 0 10px;
-        display: flex;
-        justify-content: center;
-        gap: 12px;
-        flex-wrap: wrap;
-      }
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Open navigation</span>
+        <span></span><span></span><span></span>
+      </button>
 
-      .legal-btn {
-        display: inline-block;
-        padding: 10px 16px;
-        border-radius: 999px;
-        text-decoration: none;
-        border: 1px solid rgba(255,255,255,0.18);
-        background: rgba(255,255,255,0.06);
-        color: rgba(255,255,255,0.92);
-        font-size: 14px;
-        transition: background 0.2s ease;
-      }
-
-      .legal-btn:hover {
-        background: rgba(255,255,255,0.12);
-      }
-
-      footer {
-        margin-top: 40px;
-        padding: 20px 12px;
-        border-top: 1px solid rgba(255,255,255,0.12);
-        font-size: 13px;
-        color: rgba(255,255,255,0.65);
-      }
-
-      footer a {
-        color: rgba(255,255,255,0.8);
-        text-decoration: none;
-      }
-
-      footer a:hover {
-        text-decoration: underline;
-      }
-    </style>
-  </head>
-
-  <body>
-
-    <!-- HERO IMAGE -->
-    <img 
-      src="images/Silver-Meridian-Site-Banner2.png"
-      alt="Silver Meridian — Digital Experience Architects"
-    />
-
-    <!-- LEGAL LINKS -->
-    <div class="legal-links">
-      <a class="legal-btn" href="terms.html">Terms &amp; Conditions</a>
-      <a class="legal-btn" href="privacy.html">Privacy Policy</a>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#services">What I build</a>
+        <a href="#projects">Current projects</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav-cta">Work with me</a>
+      </nav>
     </div>
+  </header>
 
-    <!-- FOOTER -->
-    <footer>
+  <main id="main">
+    <section class="hero">
+      <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Independent app development · UK</p>
+          <h1>Thoughtful apps built around real communities.</h1>
+          <p class="hero-lede">
+            Silver Meridian designs and develops purposeful digital products — from community platforms and festival apps
+            to member experiences, admin systems and launch-ready iOS products.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">See current projects</a>
+            <a class="button button-secondary" href="#contact">Start a conversation</a>
+          </div>
+
+          <div class="hero-proof" aria-label="Capabilities">
+            <span>SwiftUI</span>
+            <span>Firebase</span>
+            <span>Product design</span>
+            <span>App Store launch</span>
+          </div>
+        </div>
+
+        <div class="hero-panel" aria-label="Silver Meridian approach">
+          <div class="panel-kicker">From idea to live product</div>
+          <div class="panel-line">
+            <span>01</span>
+            <div>
+              <strong>Design the experience</strong>
+              <small>Clear journeys, polished interfaces, useful features.</small>
+            </div>
+          </div>
+          <div class="panel-line">
+            <span>02</span>
+            <div>
+              <strong>Build the product</strong>
+              <small>Native iOS, Firebase backends and practical admin tools.</small>
+            </div>
+          </div>
+          <div class="panel-line">
+            <span>03</span>
+            <div>
+              <strong>Prepare for launch</strong>
+              <small>Testing, App Store readiness, analytics and iteration.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow">What I build</p>
+          <h2>Digital products with a strong sense of purpose.</h2>
+          <p>
+            I work across product thinking, interface design and implementation, with particular experience in
+            community-led, event, travel and membership products.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-icon">◌</div>
+            <h3>Native iOS apps</h3>
+            <p>SwiftUI products designed to feel coherent, responsive and distinctly their own.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">↗</div>
+            <h3>Firebase-backed systems</h3>
+            <p>Authentication, Firestore, Cloud Functions, media, permissions and operational tooling.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">◇</div>
+            <h3>Product & UX design</h3>
+            <p>Features shaped around genuine user needs, with attention to flow, tone and visual consistency.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">✓</div>
+            <h3>Launch preparation</h3>
+            <p>App Store readiness, testing, privacy surfaces, monetisation, analytics and final polish.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="projects">
+      <div class="shell">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">Current projects</p>
+            <h2>Products in active development.</h2>
+          </div>
+          <p>
+            A selection of current work spanning travel, community, events and Pride.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card project-featured">
+            <div class="project-art project-art-journeys">
+              <span class="project-badge">Flagship project</span>
+              <span class="project-monogram">SJ</span>
+            </div>
+            <div class="project-body">
+              <p class="project-type">Travel · Community · Membership</p>
+              <h3>Sapphic Journeys</h3>
+              <p>
+                A community-led travel and connection platform, combining discovery, messaging, curated journeys,
+                member features and AI-assisted travel exploration.
+              </p>
+              <div class="project-tags">
+                <span>SwiftUI</span><span>Firebase</span><span>StoreKit</span><span>AI features</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-art project-art-sappho">
+              <span class="project-badge">Festival app</span>
+              <span class="project-monogram">SWF</span>
+            </div>
+            <div class="project-body">
+              <p class="project-type">Events · Programme · Local discovery</p>
+              <h3>Sappho Women’s Festival 2026</h3>
+              <p>
+                A dedicated festival companion covering schedules, performers, local information, saved events,
+                live festival content and organiser-facing administration.
+              </p>
+              <div class="project-tags">
+                <span>SwiftUI</span><span>Firebase</span><span>Events</span><span>Admin tools</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-art project-art-pride">
+              <span class="project-badge">Community platform</span>
+              <span class="project-monogram">SP</span>
+            </div>
+            <div class="project-body">
+              <p class="project-type">Pride · Events · Community</p>
+              <h3>Scarborough Pride</h3>
+              <p>
+                A Pride-focused app bringing together events, schedules, supporter features, maps, notifications,
+                community resources and administrative analytics.
+              </p>
+              <div class="project-tags">
+                <span>SwiftUI</span><span>Firebase</span><span>Push</span><span>Analytics</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="project-note">
+          Selected project details may evolve as products move through development and release.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="shell about-grid">
+        <div class="about-copy">
+          <p class="eyebrow">About Silver Meridian</p>
+          <h2>Independent development with product thinking built in.</h2>
+        </div>
+
+        <div class="about-text">
+          <p>
+            Silver Meridian is an independent digital studio focused on useful, well-considered apps. The work combines
+            product strategy, interface design and hands-on development rather than treating them as separate disciplines.
+          </p>
+          <p>
+            I am especially interested in products that serve communities, bring people together, make events easier to
+            navigate, or turn a strong idea into something people can genuinely use.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="shell contact-card">
+        <div>
+          <p class="eyebrow">Work with me</p>
+          <h2>Have an app or digital product in mind?</h2>
+          <p>
+            I’m open to freelance development, product collaborations and selected community or event projects.
+          </p>
+        </div>
+
+        <a class="button button-light" href="mailto:paris@silvermeridian.co.uk">paris@silvermeridian.co.uk</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
       <div>
-        <a href="terms.html">Terms</a>
-        &nbsp;•&nbsp;
+        <a class="brand footer-brand" href="#top">
+          <span class="brand-mark" aria-hidden="true">✦</span>
+          <span>Silver Meridian</span>
+        </a>
+        <p>Independent app development and digital product design.</p>
+      </div>
+
+      <div class="footer-links">
         <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="mailto:paris@silvermeridian.co.uk">Contact</a>
       </div>
-      <div style="margin-top:8px;">
-        © <span id="year"></span> Silver Meridian
-      </div>
-    </footer>
 
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+      <p class="copyright">© <span id="year"></span> Silver Meridian. All rights reserved.</p>
+    </div>
+  </footer>
 
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
-
