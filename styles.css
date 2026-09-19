@@ -129,3 +129,12 @@ h3 { margin-bottom: 10px; font-size: 1.28rem; }
 .technology-tagline { margin:24px 0 0; color:white; font-weight:700; letter-spacing:.04em; }
 .technology-note { max-width:900px; margin:30px auto 0; color:rgba(255,255,255,.62); text-align:center; }
 @media (max-width:760px) { .technology-grid { grid-template-columns:1fr; } .technology-body { padding:24px; } }
+
+
+/* Sapphic Journeys launch feature */
+.project-art-image { position:relative; overflow:hidden; min-height:360px; background:#111; }
+.project-art-image img { width:100%; height:100%; min-height:360px; display:block; object-fit:cover; object-position:center; }
+.project-badge-launch { position:absolute; top:20px; left:20px; z-index:2; text-transform:uppercase; letter-spacing:.12em; }
+.project-launch-line { font-weight:700; font-size:1.08rem; }
+.project-launch-link { display:inline-block; margin-top:18px; font-weight:700; text-decoration:none; }
+.project-launch-link:hover { text-decoration:underline; }
