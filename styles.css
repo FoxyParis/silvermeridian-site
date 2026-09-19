@@ -111,3 +111,21 @@ h3 { margin-bottom: 10px; font-size: 1.28rem; }
 @media (max-width: 980px) { .hero { padding-top: 72px; } .hero-grid,.split-heading,.about-grid { grid-template-columns: 1fr; gap: 36px; } .service-grid { grid-template-columns: repeat(2, 1fr); } .project-featured { grid-template-columns: 1fr; } .project-featured .project-art { min-height: 300px; } .contact-card { align-items: flex-start; flex-direction: column; } .site-header .brand { width: clamp(280px, 38vw, 390px); height: 60px; } }
 @media (max-width: 760px) { .shell { width: min(calc(100% - 28px), var(--shell)); } .nav-wrap { min-height: 78px; } .site-header .brand { width: min(72vw, 330px); height: 52px; border-radius: 14px; } .menu-button { display: block; } .site-nav { position: absolute; left: 14px; right: 14px; top: calc(100% + 8px); display: none; flex-direction: column; align-items: stretch; gap: 5px; padding: 12px; border: 1px solid var(--line); border-radius: 18px; background: rgba(255,255,255,0.98); box-shadow: var(--shadow); } .site-nav.open { display: flex; } .site-nav a { padding: 11px 12px; border-radius: 12px; } .nav-cta { text-align: center; } .hero { padding: 62px 0 64px; } h1 { font-size: clamp(3rem, 14vw, 4.7rem); } .section { padding: 72px 0; } .service-grid { grid-template-columns: 1fr; } .service-card { min-height: 0; } .project-card,.project-featured { grid-column: span 12; } .project-featured .project-body { padding: 30px; } .contact-card { padding: 34px 26px; } .button-light { width: 100%; } .footer-grid { grid-template-columns: 1fr; } .copyright { grid-column: auto; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *,*::before,*::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; } }
+
+
+/* Silver Meridian proprietary technology */
+.technology-section { color: #f8fbff; background: radial-gradient(circle at 15% 10%, rgba(36,87,214,.30), transparent 30%), radial-gradient(circle at 85% 85%, rgba(109,91,208,.22), transparent 30%), linear-gradient(145deg,#07111f,#0d1727 58%,#101d34); }
+.technology-section .eyebrow { color: #65cfff; }
+.technology-heading > p { color: rgba(255,255,255,.68) !important; }
+.technology-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; }
+.technology-card { overflow:hidden; border:1px solid rgba(255,255,255,.12); border-radius:28px; background:rgba(255,255,255,.055); box-shadow:0 24px 70px rgba(0,0,0,.24); transition:transform 180ms ease,border-color 180ms ease,box-shadow 180ms ease; }
+.technology-card:hover { transform:translateY(-3px); border-color:rgba(101,207,255,.42); box-shadow:0 28px 80px rgba(0,0,0,.32),0 0 34px rgba(36,87,214,.14); }
+.technology-art { aspect-ratio:1/1; overflow:hidden; background:#050b13; }
+.technology-art img { width:100%; height:100%; object-fit:cover; }
+.technology-body { padding:30px; }
+.technology-body .project-type { color:#65cfff; }
+.technology-body h3 { margin-bottom:14px; color:white; font-family:"Playfair Display",Georgia,serif; font-size:clamp(1.7rem,3vw,2.45rem); letter-spacing:-.03em; }
+.technology-body > p:not(.project-type):not(.technology-tagline) { color:rgba(255,255,255,.70); }
+.technology-tagline { margin:24px 0 0; color:white; font-weight:700; letter-spacing:.04em; }
+.technology-note { max-width:900px; margin:30px auto 0; color:rgba(255,255,255,.62); text-align:center; }
+@media (max-width:760px) { .technology-grid { grid-template-columns:1fr; } .technology-body { padding:24px; } }
